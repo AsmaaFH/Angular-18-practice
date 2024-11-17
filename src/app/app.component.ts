@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { interval } from 'rxjs';
 import { take, map } from 'rxjs/operators';
+import { AsyncPipeComponent } from './AsyncPipe/async-pipe/async-pipe.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AsyncPipeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
