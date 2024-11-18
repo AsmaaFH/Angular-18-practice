@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { interval } from 'rxjs';
 import { take, map } from 'rxjs/operators';
 import { AsyncPipeComponent } from './AsyncPipe/async-pipe/async-pipe.component';
+import { ModelDrivenFormComponent } from "./Forms/model-driven-form/model-driven-form.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipeComponent],
+  imports: [RouterOutlet, AsyncPipeComponent, ModelDrivenFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
