@@ -5,6 +5,7 @@ import { take, map } from 'rxjs/operators';
 import { AsyncPipeComponent } from './AsyncPipe/async-pipe/async-pipe.component';
 import { ModelDrivenFormComponent } from './Forms/model-driven-form/model-driven-form.component';
 import { ModelDrivenFormValidatorsComponent } from './Forms/model-driven-form-validators/model-driven-form-validators.component';
+import { ReactiveModelFormComponent } from './Forms/reactive-model-form/reactive-model-form.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ModelDrivenFormValidatorsComponent } from './Forms/model-driven-form-va
     //  AsyncPipeComponent,
     // ModelDrivenFormComponent,
     ModelDrivenFormValidatorsComponent,
+    ReactiveModelFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
