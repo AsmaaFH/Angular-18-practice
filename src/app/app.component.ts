@@ -7,6 +7,9 @@ import { ModelDrivenFormComponent } from './Forms/model-driven-form/model-driven
 import { ModelDrivenFormValidatorsComponent } from './Forms/model-driven-form-validators/model-driven-form-validators.component';
 import { ReactiveModelFormComponent } from './Forms/reactive-model-form/reactive-model-form.component';
 import { TemplateDrivenFormComponent } from './Forms/template-driven-form/template-driven-form.component';
+import { ProvidersComponent } from './Dependency Injection/providers/providers.component';
+import { ParentComponent } from "./Dependency Injection/parent/parent.component";
+import { ChildComponent } from "./Dependency Injection/child/child.component";
 
 @Component({
   selector: 'app-root',
@@ -15,10 +18,13 @@ import { TemplateDrivenFormComponent } from './Forms/template-driven-form/templa
     RouterOutlet,
     //  AsyncPipeComponent,
     // ModelDrivenFormComponent,
-    ModelDrivenFormValidatorsComponent,
-    ReactiveModelFormComponent,
-    TemplateDrivenFormComponent
-  ],
+    // ModelDrivenFormValidatorsComponent,
+    // ReactiveModelFormComponent,
+    // TemplateDrivenFormComponent,
+    // ProvidersComponent,
+    ParentComponent,
+    ChildComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
