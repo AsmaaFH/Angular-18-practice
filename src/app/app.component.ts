@@ -6,6 +6,7 @@ import { AsyncPipeComponent } from './AsyncPipe/async-pipe/async-pipe.component'
 import { ModelDrivenFormComponent } from './Forms/model-driven-form/model-driven-form.component';
 import { ModelDrivenFormValidatorsComponent } from './Forms/model-driven-form-validators/model-driven-form-validators.component';
 import { ReactiveModelFormComponent } from './Forms/reactive-model-form/reactive-model-form.component';
+import { TemplateDrivenFormComponent } from './Forms/template-driven-form/template-driven-form.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { ReactiveModelFormComponent } from './Forms/reactive-model-form/reactive
     //  AsyncPipeComponent,
     // ModelDrivenFormComponent,
     ModelDrivenFormValidatorsComponent,
-    ReactiveModelFormComponent
+    ReactiveModelFormComponent,
+    TemplateDrivenFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
