@@ -10,6 +10,9 @@ import { TemplateDrivenFormComponent } from './Forms/template-driven-form/templa
 import { ProvidersComponent } from './Dependency Injection/providers/providers.component';
 import { ParentComponent } from "./Dependency Injection/parent/parent.component";
 import { ChildComponent } from "./Dependency Injection/child/child.component";
+import { HttpApiComponent } from "./Http/http-api/http-api.component";
+// import { HttpWithPromiseComponent } from './Http/http-with-promise/http-with-promise.component';
+import { HttpWithObservablesComponent } from "./Http/http-with-observables/http-with-observables.component";
 
 @Component({
   selector: 'app-root',
@@ -22,8 +25,11 @@ import { ChildComponent } from "./Dependency Injection/child/child.component";
     // ReactiveModelFormComponent,
     // TemplateDrivenFormComponent,
     // ProvidersComponent,
-    ParentComponent,
-    ChildComponent
+    // ParentComponent,
+    // ChildComponent,
+    // HttpApiComponent
+    // HttpWithPromiseComponent,
+    HttpWithObservablesComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
