@@ -13,6 +13,8 @@ import { ChildComponent } from "./Dependency Injection/child/child.component";
 import { HttpApiComponent } from "./Http/http-api/http-api.component";
 // import { HttpWithPromiseComponent } from './Http/http-with-promise/http-with-promise.component';
 import { HttpWithObservablesComponent } from "./Http/http-with-observables/http-with-observables.component";
+import { ArtistComponent } from './Routing/artist/artist.component';
+import { HeaderComponent } from './Routing/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +31,9 @@ import { HttpWithObservablesComponent } from "./Http/http-with-observables/http-
     // ChildComponent,
     // HttpApiComponent
     // HttpWithPromiseComponent,
-    HttpWithObservablesComponent
+    // HttpWithObservablesComponent,
+    // ArtistComponent
+    HeaderComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
