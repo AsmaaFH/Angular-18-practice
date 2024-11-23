@@ -1,11 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { CanDeactivateFn } from '@angular/router';
+import { unSearchedTermGuard } from './un-searched-term.guard';
+import { SearchComponent } from '../search/search.component';
 
-import { unsearchedTermGuard } from './unsearched-term.guard';
 
 describe('unsearchedTermGuard', () => {
-  const executeGuard: CanDeactivateFn = (...guardParameters) => 
-      TestBed.runInInjectionContext(() => unsearchedTermGuard(...guardParameters));
+  const executeGuard: CanDeactivateFn<SearchComponent> = (...guardParameters) =>
+      TestBed.runInInjectionContext(() => unSearchedTermGuard(...guardParameters));
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
