@@ -8,7 +8,7 @@ import { HomeComponent } from './Routing/home/home.component';
 import { alwaysAuthGuard } from './Routing/Guards/always-auth.guard';
 import { LoginComponent } from './Routing/login/login.component';
 import { authGuard } from './Routing/Guards/auth.guard';
-import { unSearchedTermGuard } from './Routing/Guards/unsearched-term.guard';
+import { unSearchedTermGuard } from './Routing/Guards/un-searched-term.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
