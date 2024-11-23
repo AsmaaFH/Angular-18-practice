@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SearchItem } from '../search-item';
 import { SearchService } from '../search.service';
-import { Console } from 'console';
 import { CommonModule } from '@angular/common';
 import { SearchJsonpService } from '../search-jsonp.service';
 
