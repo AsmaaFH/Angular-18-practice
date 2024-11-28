@@ -16,12 +16,12 @@ export class HeaderComponent {
   public auth = inject(AuthService);
 
   ngOnInit(){
-    console.log(this.auth.isLoggedIn());
+    // console.log(this.auth.isLoggedIn());
   }
   goSearch(){
     let part = "foo";
     this.router.navigate(['search', part, 'moo']).then(success => {
-      console.log('Navigation success:', success);
+      // console.log('Navigation success:', success);
     }).catch(err => {
       console.error('Navigation error:', err);
     });
