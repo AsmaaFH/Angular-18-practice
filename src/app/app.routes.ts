@@ -9,6 +9,7 @@ import { alwaysAuthGuard } from './Routing/Guards/always-auth.guard';
 import { LoginComponent } from './Routing/login/login.component';
 import { authGuard } from './Routing/Guards/auth.guard';
 import { unSearchedTermGuard } from './Routing/Guards/un-searched-term.guard';
+import { ParentComponent } from './Lifecycle Hooks/parent/parent.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,4 +27,5 @@ export const routes: Routes = [
       { path: 'videos', component: ArtistVideoListComponent },
     ],
   },
+  { path: 'lifecycle', component: ParentComponent },
 ];

@@ -39,11 +39,11 @@ export class ModelDrivenFormComponent implements OnInit {
 
   onSubmit() {
     if (this.myForm.valid) {
-      console.log("Form Submitted!");
-      console.log(this.myForm.value);
+      // console.log("Form Submitted!");
+      // console.log(this.myForm.value);
       this.myForm.reset();
     }else{
-      console.log(this.myForm.value);
+      // console.log(this.myForm.value);
     }
   }
 }
