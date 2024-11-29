@@ -7,6 +7,9 @@
     <li class="nav-item" [routerLinkActive]="['active']">
       <a class="nav-link" [routerLink]="['search']">Search</a>
     </li>
+    <li class="nav-item" [routerLinkActive]="['active']">
+      <a class="nav-link" [routerLink]="['numbers']">Numbers</a>
+    </li>
     <li>
       <a *ngIf="auth.isLoggedIn()" (click)="logout()" class="btn btn-warning">Logout</a>
     </li>
