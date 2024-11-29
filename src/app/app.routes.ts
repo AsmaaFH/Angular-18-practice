@@ -10,6 +10,8 @@ import { LoginComponent } from './Routing/login/login.component';
 import { authGuard } from './Routing/Guards/auth.guard';
 import { unSearchedTermGuard } from './Routing/Guards/un-searched-term.guard';
 import { ParentComponent } from './Lifecycle Hooks/parent/parent.component';
+import { NumberListComponent } from './pipes/number-list/number-list.component';
+import { ParentComponent as Parent } from './pipes/parent/parent.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,4 +30,5 @@ export const routes: Routes = [
     ],
   },
   { path: 'lifecycle', component: ParentComponent },
+  { path: 'numbers', component: Parent },
 ];
