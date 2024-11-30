@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, SimpleChanges } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
+import { of, tap } from 'rxjs';
 
 @Component({
   selector: 'app-parent',
@@ -12,46 +13,20 @@ import { ChildComponent } from '../child/child.component';
 export class ParentComponent {
   items = ['Mango', 'Orange'];
 
-  constructor() {
-    console.log(`constructor  - data is ${this.items}`);
-  }
+  constructor() {}
 
   ngOnInit() {
-    console.log(`ngOnInit  - data is ${this.items}`);
+    //for testing
+    let observable = of(this.items);
+    observable.subscribe((items) => console.log(items));
+
+    observable.pipe(tap((data) => console.log('Received:', data)));
+    observable.subscribe();
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(`ngOnChanges - data is ${this.items}`);
-
     for (let key in changes) {
       let change = changes[key];
-      console.log(`${key} changed.
-      Current : ${change.currentValue}.
-      Previous: ${change.previousValue}`);
     }
-  }
-
-  ngDoCheck() {
-    console.log(`ngDoCheck  - data is ${this.items}`);
-  }
-
-  ngAfterContentInit() {
-    console.log("ngAfterContentInit");
-  }
-
-  ngAfterContentChecked() {
-    console.log("ngAfterContentChecked");
-  }
-
-  ngAfterViewInit() {
-    console.log("ngAfterViewInit");
-  }
-
-  ngAfterViewChecked() {
-    console.log("ngAfterViewChecked");
-  }
-
-  ngOnDestroy() {
-    console.log("ngOnDestroy");
   }
 }
