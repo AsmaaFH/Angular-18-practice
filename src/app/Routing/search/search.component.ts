@@ -12,6 +12,9 @@ import { SearchService } from '../search.service';
   styleUrl: './search.component.scss'
 })
 export class SearchComponent {
+  ngOnInit() {
+    throw new Error('Method not implemented.');
+  }
   public itunes = inject(SearchService);
   private router = inject(Router);
   private route = inject(ActivatedRoute);

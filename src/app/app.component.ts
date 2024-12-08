@@ -41,6 +41,10 @@ import { HeaderComponent } from './Routing/header/header.component';
 export class AppComponent {
   title = 'angular-18-practice';
 
+  getTitle(){
+		return this.title;
+	}
+
   ngOnInit() {
     // const numbers = interval(1000);
     // numbers.subscribe((value) => {

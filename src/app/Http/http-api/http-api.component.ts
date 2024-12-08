@@ -11,6 +11,7 @@ export class HttpApiComponent {
   apiRoot: string = 'http://httpbin.org';
 
   constructor(private http: HttpClient) {}
+  
   doGET() {
     console.log('GET');
     let url = `${this.apiRoot}/get`;
@@ -29,7 +30,7 @@ export class HttpApiComponent {
     this.http.post(url, { moo: 'foo', goo: 'loo' }, httpOptions).subscribe((res) => console.log(res));
   }
 
- 
+
   doPUT() {
     console.log("PUT");
     let url = `${this.apiRoot}/put`;
